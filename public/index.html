@@ -2,50 +2,107 @@
 <head>
     <link rel="stylesheet" href="style1.css">
     <script src="script1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <div class="Container">
         <div class="center">
-            <div class="titulo">
+            <div class="titulo" id="titulo">
                 <h1>Práctica de Lectura</h1>
             </div>
             <button class="btn" id="start" onclick="toMenu()">Empezar</button>
             
             <div id="menu">
-                <div class="nivel-css">Selecciona una opción</div>
+            <div class="nivel-css">Selecciona una opción</div>
             <div>
             <br>
             <button class="btn" onclick="toMenu1(0)">Cuentos</button>
             </div>
+            <div>
+                <br>
+                <button class="btn" onclick="toMenu1(1)">Abecedario</button>
+                </div>
             </div>
             
             <div id="menu1">
                 <div id="nivel" class="nivel-css1">Selecciona un cuento</div>
-            <div>
-                <div><img src="caperucita.png" width="120px" height="120px"></div>
-                <div class="btna"><button class="btn" onclick="quiz(0)">Caperucita Roja</button></div>
-            </div>
-            
-            <div>
-                <div><img src="trescerditos.jpg" width="150px" height="100px"></div>
-                <div><button class="btn" onclick="quiz(1)">Los tres Cerditos</button></div>
-            </div>
-            <div>
-                <div><img src="cohete.jpg" width="100px" height="100px"></div>
-                <div><button class="btn" onclick="quiz(2)">El cohete de papel</button></div>
-            </div>
+                <div class="grid-container-cuentos">
+                    <div class="grid-item-cuentos"></div>
+                    <div class="grid-item-cuentos">
+                        <div>
+                        <div><img src="caperucita.png" width="120px" height="150px"></div>
+                        <div class="btna"><button class="btn" onclick="quiz(0)">Caperucita Roja</button></div>
+                        </div>
+                    </div>
+                    <div class="grid-item-cuentos"></div>
+
+                </div>
+                <div class="grid-container-cuentos">
+                    <div class="grid-item-cuentos"></div>
+                    <div class="grid-item-cuentos">
+                        <div>
+                            <div><img src="trescerditos.png" width="150px" height="150px"></div>
+                            <div><button class="btn" onclick="quiz(1)">Los tres cerditos</button></div>
+                        </div>
+                    </div>
+                    <div class="grid-item-cuentos"></div>
+                </div>
+                <div class="grid-container-cuentos">
+                    <div class="grid-item-cuentos"></div>
+                    <div class="grid-item-cuentos">
+                        <div>
+                            <div><img src="cohete.jpg" width="150px" height="150px"></div>
+                            <div><button class="btn" onclick="quiz(2)">El cohete de papel</button></div>
+                        </div>
+                    </div>
+                    <div class="grid-item-cuentos"></div>
+                </div>
             <br>
-            <div>
-                <button class="btn" onclick="toMenu()">Volver</button>
-            </div>
+            <button class="btn" onclick="toMenu()">Volver</button>
         </div>
         <div class="divTituloCuento">
-        <p id="tituloCuento"></p>
+        <p id="tituloCuento"></p><br>
+        <p id="indicaciones"> Desplázate en el cuento <i class='fas fa-arrows-alt-v'></i> </p>
+        <p id="indicaciones-abc"> Desplázate en el abecedario <i class='fas fa-arrows-alt-v'></i> y  <i class='fas fa-arrows-alt-h'></i></p>
         </div>
         <br>
     </div>
     <div class="contenido" id="contenido"></div><br>
-    <div class="boton"><button class="btn" id="answer" onclick="toMenu1(0)">Volver</button></div>
+    <div class="grid-container" id="grid-container">
+        <div class="grid-item"><img src="abeja.jpg" width="150px" height="100px"><div class="letra">A a</div><div class="palabra"><span class="inicial">A</span>beja</div></div>
+        <div class="grid-item"><img src="ballena.jpg" width="150px" height="100px"><div class="letra">B b</div><div class="palabra"><span class="inicial">B</span>allena</div></div>
+        <div class="grid-item"><img src="cocodrilo.png" width="150px" height="100px"><div class="letra">C c</div><div class="palabra"><span class="inicial">C</span>odrilo</div></div>
+        <div class="grid-item"><img src="delfin.jpg" width="150px" height="100px"><div class="letra">D d</div><div class="palabra"><span class="inicial">D</span>elfín</div></div>
+        <div class="grid-item"><img src="elefante.jpg" width="150px" height="100px"><div class="letra">E e</div><div class="palabra"><span class="inicial">E</span>lefante</div></div>
+        <div class="grid-item"><img src="flamenco.jpg" width="150px" height="100px"><div class="letra">F f</div><div class="palabra"><span class="inicial">F</span>lamenco</div></div>
+        <div class="grid-item"><img src="gato.jpg" width="150px" height="100px"><div class="letra">G g</div><div class="palabra"><span class="inicial">G</span>ato</div></div>
+        <div class="grid-item"><img src="hamburguesa.jpg" width="150px" height="100px"><div class="letra">H h</div><div class="palabra"><span class="inicial">H</span>amburguesa</div></div>
+        <div class="grid-item"><img src="iguana.jpg" width="150px" height="100px"><div class="letra">I i</div><div class="palabra"><span class="inicial">I</span>guana</div></div>
+        <div class="grid-item"><img src="jirafa.jpg" width="150px" height="100px"><div class="letra">J j</div><div class="palabra"><span class="inicial">J</span>irafa</div></div>
+        <div class="grid-item"><img src="kiwi.jpg" width="150px" height="100px"><div class="letra">K k</div><div class="palabra"><span class="inicial">K</span>iwi</div></div>
+        <div class="grid-item"><img src="leon.jpg" width="150px" height="100px"><div class="letra">L l</div><div class="palabra"><span class="inicial">L</span>eón</div></div>
+        <div class="grid-item"><img src="mono.jpg" width="150px" height="100px"><div class="letra">M m</div><div class="palabra"><span class="inicial">M</span>ono</div></div>
+        <div class="grid-item"><img src="naranja.png" width="150px" height="100px"><div class="letra">N n</div><div class="palabra"><span class="inicial">N</span>aranja</div></div>
+        <div class="grid-item"><img src="piña.jpg" width="150px" height="100px"><div class="letra">Ñ ñ</div><div class="palabra">Pi<span class="inicial">ñ</span>a</div></div>
+        <div class="grid-item"><img src="oso.jpg" width="150px" height="100px"><div class="letra">O o</div><div class="palabra"><span class="inicial">O</span>so</div></div>
+        <div class="grid-item"><img src="pato.jpg" width="150px" height="100px"><div class="letra">P p</div><div class="palabra"><span class="inicial">P</span>ato</div></div>
+        <div class="grid-item"><img src="queso.jpg" width="150px" height="100px"><div class="letra">Q q</div><div class="palabra"><span class="inicial">Q</span>ueso</div></div>
+        <div class="grid-item"><img src="rana.png" width="150px" height="100px"><div class="letra">R r</div><div class="palabra"><span class="inicial">R</span>ana</div></div>
+        <div class="grid-item"><img src="serpiente.jpg" width="150px" height="100px"><div class="letra">S s</div><div class="palabra"><span class="inicial">S</span>erpiente</div></div>
+        <div class="grid-item"><img src="tortuga.jpg" width="150px" height="100px"><div class="letra">T t</div><div class="palabra"><span class="inicial">T</span>ortuga</div></div>
+        <div class="grid-item"><img src="uva.jpg" width="150px" height="100px"><div class="letra">U u</div><div class="palabra"><span class="inicial">U</span>va</div></div>
+        <div class="grid-item"><img src="vaca.png" width="150px" height="100px"><div class="letra">V v</div><div class="palabra"><span class="inicial">V</span>aca</div></div>
+        <div class="grid-item"><img src="waffle.jpg" width="150px" height="100px"><div class="letra">W w</div><div class="palabra"><span class="inicial">W</span>affle</div></div>
+        <div class="grid-item"><img src="xilofono.jpg" width="150px" height="100px"><div class="letra">X x</div><div class="palabra"><span class="inicial">X</span>ilófono</div></div>
+        <div class="grid-item"><img src="yate.jpg" width="150px" height="100px"><div class="letra">Y y</div><div class="palabra"><span class="inicial">Y</span>ate</div></div>
+        <div class="grid-item"><img src="zorro.jpg" width="150px" height="100px"><div class="letra">Z z</div><div class="palabra"><span class="inicial">Z</span>orro</div></div>
+    </div>
+    <br>
+         
+    <div class="boton">
+        <button class="btn" id="answer" onclick="toMenu1(0)">Volver</button>
+        <button class="btn" id="answer1" onclick="toMenu(0)">Volver</button>
+    </div>
     </div>
 </body>
 </html>

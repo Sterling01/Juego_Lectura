@@ -4,7 +4,7 @@ body {
 
 .Container {
   width: 95%;
-  height: 70%;
+  height: 80%;
   margin: 0 auto;
 }
 
@@ -15,6 +15,7 @@ body {
 .divTituloCuento{
     text-align: center;
 }
+
 .boton{
     text-align: center;
 }
@@ -26,8 +27,54 @@ body {
     width: 100%;
     height: 100%;
     display: none;
+    background-color: #F6F7FF;
     word-wrap: break-word;
-    overflow: auto;     
+    overflow-x: hidden;
+    overflow-y: scroll;     
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFDC9;
+  padding: 10px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container-cuentos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFF;
+  padding: 10px;
+  display: grid;
+}
+.grid-item-cuentos {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.letra{
+  font-size: xx-large;
+  color: #FF7700;
+  font-weight: bold
+}
+.palabra{
+  font-size: x-large;
+}
+.inicial{
+  color: #FF00AA;
+  font-weight: bold;
 }
 
 .center{
@@ -89,6 +136,16 @@ h1 {
   margin-top: 0;
 }
 
+#indicaciones{
+  display: none;
+  color: blue;
+}
+ 
+#indicaciones-abc{
+  display: none;
+  color: blue;
+}
+
 #question {
   display: none;
   margin-left: 100px;
@@ -102,6 +159,10 @@ h1 {
 }
 
 #answer {
+  display: none;
+}
+
+#answer1 {
   display: none;
 }
 
